@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181439776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3854516, y: 0.5, z: -0.33091497}
+  m_LocalPosition: {x: 0.938, y: 0.648, z: -0.33091497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -333,10 +333,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 160.2
-  orthographic: 0
-  orthographic size: 5
+  far clip plane: 20000
+  field of view: 4.4
+  orthographic: 1
+  orthographic size: 3
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -784,6 +784,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1957246010859068605, guid: 954c6044779636d4ba2d20c42bb63705, type: 3}
+      propertyPath: m_Color.b
+      value: 0.34509802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957246010859068605, guid: 954c6044779636d4ba2d20c42bb63705, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957246010859068605, guid: 954c6044779636d4ba2d20c42bb63705, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7241204
+      objectReference: {fileID: 0}
     - target: {fileID: 7888306334954463624, guid: 954c6044779636d4ba2d20c42bb63705, type: 3}
       propertyPath: m_Intensity
       value: 1
