@@ -19,6 +19,8 @@ public class PlayerEventHandler : MonoBehaviour
     private bool isWalking;
     private bool isDead;
     private bool isInContact;
+    private int counter=0;
+    //private bool isGenerator;
     private GameObject interactableObject;
     void Start()
     {
@@ -67,7 +69,20 @@ public class PlayerEventHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isInContact==true)
         {
             print("EEEEEEEEEEE");
-            interactableObject.GetComponent<SpriteRenderer>().color= Color.green;
+            counter++;
+            if (counter == 1)
+            {
+                interactableObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+            }
+            else if (counter == 2)
+            {
+                interactableObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            else if (counter == 3)
+            {
+                interactableObject.GetComponent<SpriteRenderer>().color = Color.green;
+            }
+
         }
 
         //DEBUG
