@@ -30,8 +30,8 @@ public class PlayerEventHandler : MonoBehaviour
         {
             isWalking = true;
         }
-        animationTriggerer = GetComponentInChildren<AnimationTriggerer>();
-        animationTriggerer.OnAnimationComplete.AddListener(OnAnimationFinished);
+        //animationTriggerer = GetComponentInChildren<AnimationTriggerer>();
+        //animationTriggerer.OnAnimationComplete.AddListener(OnAnimationFinished);
     }
 
     void Update()
