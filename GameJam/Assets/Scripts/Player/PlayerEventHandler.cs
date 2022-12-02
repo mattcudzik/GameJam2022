@@ -8,8 +8,8 @@ public class PlayerEventHandler : MonoBehaviour
     public UnityEvent OnWalkStart;
     public UnityEvent OnWalkFinished;
     public UnityEvent OnTurn;
-    public UnityEvent<int> OnDamage;
-    public UnityEvent OnDeath;
+   // public UnityEvent<int> OnDamage;
+   // public UnityEvent OnDeath;
 
     private IVelocity velocityComp;
     private Vector2 prevVelocity;
@@ -17,7 +17,7 @@ public class PlayerEventHandler : MonoBehaviour
     private AnimationTriggerer animationTriggerer;
 
     private bool isWalking;
-    private bool isDead;
+    //private bool isDead;
     void Start()
     {
         velocityComp = GetComponent<IVelocity>();
@@ -63,11 +63,11 @@ public class PlayerEventHandler : MonoBehaviour
             isWalking = false;
         }
 
-        //DEBUG
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            OnDamage?.Invoke(1);
-        }
+        ////DEBUG
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    OnDamage?.Invoke(1);
+        //}
     }
 
     private void OnAnimationFinished(string name)
