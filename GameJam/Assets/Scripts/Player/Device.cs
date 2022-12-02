@@ -18,8 +18,6 @@ public class Device : MonoBehaviour
 
     public virtual void Speed()
     {
-        double speed = 0.0;
-        speed = distance / hour;
-        Console.WriteLine("Vehicle Speed is {0:0.00}", speed);
+       
     }
 }
