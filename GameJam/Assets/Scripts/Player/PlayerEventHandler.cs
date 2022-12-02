@@ -18,6 +18,8 @@ public class PlayerEventHandler : MonoBehaviour
 
     private bool isWalking;
     private bool isDead;
+    private bool isInContact;
+    private GameObject interactableObject;
     void Start()
     {
         velocityComp = GetComponent<IVelocity>();
@@ -62,6 +64,11 @@ public class PlayerEventHandler : MonoBehaviour
             OnWalkFinished?.Invoke();
             isWalking = false;
         }
+        if (Input.GetKeyDown(KeyCode.E) && isInContact==true)
+        {
+            print("EEEEEEEEEEE");
+            interactableObject.GetComponent<SpriteRenderer>().color= Color.green;
+        }
 
         //DEBUG
         if (Input.GetKeyDown(KeyCode.Q))
@@ -76,5 +83,30 @@ public class PlayerEventHandler : MonoBehaviour
         //{
         //    Destroy(gameObject);
         //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //Check to see if the tag on the collider is equal to Enemy
+        //Debug.Log("punkt");
+        if (other.tag == "Interactable")
+        {
+            Debug.Log("contact");
+            isInContact = true;
+            interactableObject = other.gameObject;
+            
+        }
+        
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        //Check to see if the tag on the collider is equal to Enemy
+        //Debug.Log("punkt");
+        if (other.tag == "Interactable")
+        {
+            Debug.Log("RatherNot");
+            isInContact = false;
+        }
+
     }
 }
