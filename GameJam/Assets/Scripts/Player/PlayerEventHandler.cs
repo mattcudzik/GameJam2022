@@ -20,10 +20,12 @@ public class PlayerEventHandler : MonoBehaviour
     private bool isDead;
     private bool isInContact;
     private int counter=0;
+    private int energy=50;
     //private bool isGenerator;
     private GameObject interactableObject;
     void Start()
     {
+        
         velocityComp = GetComponent<IVelocity>();
         prevVelocity = Vector2.right;
         if(velocityComp.GetVelocity() == Vector2.zero)
@@ -68,20 +70,11 @@ public class PlayerEventHandler : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && isInContact==true)
         {
-            print("EEEEEEEEEEE");
-            counter++;
-            if (counter == 1)
-            {
-                interactableObject.GetComponent<SpriteRenderer>().color = Color.yellow;
-            }
-            else if (counter == 2)
-            {
-                interactableObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            else if (counter == 3)
-            {
-                interactableObject.GetComponent<SpriteRenderer>().color = Color.green;
-            }
+            //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
+            var sw = interactableObject.GetComponent<IActiveDevice>();
+            if(sw.getCost()>0 && sw.getCost() < energy)
+            interactableObject.GetComponent<IActiveDevice>().Active();
+            
 
         }
 
