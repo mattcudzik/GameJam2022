@@ -7013,6 +7013,258 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: player2_idle_back_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cbea1a62096bf4eb4af9c512967402
+      internalID: -1040396244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_idle_back_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf05cca170afa254fa5e73d7a9d8baee
+      internalID: 1333970554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_idle_back_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090a624cfd2107d449cda4e91d2df7f9
+      internalID: 65743418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_idle_back_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d10373629eebf43a6be92c16bf58d4
+      internalID: -216283285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a9f3dd7b143f04593c3fc6488415c2
+      internalID: 695855936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6e4e10ff77fd4489d803a9305fca8
+      internalID: -1959132077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2462cf0178b67d4dadd5f8fcced169c
+      internalID: -744279394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3f1601144ebe64688c03922c2dd1f6
+      internalID: 1555853313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207601b7c20e1f44fa71a3190972c32a
+      internalID: 158595021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd076950c5f6cc04db00f8d2ab9d7a52
+      internalID: -1629876138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d04c154902546459e0bb8c5deee3dd
+      internalID: -966699010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player2_walk_back_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 176
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68d9f3e4d4980b43b792c96f4ffc7bf
+      internalID: -224026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -7066,7 +7318,6 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_312: 1268336868
       0x72_16x16RobotTileset.v1_48: 285638743
       player1_walk_4: 1351806543
-      0x72_16x16RobotTileset.v1_11: 2114334971
       0x72_16x16RobotTileset.v1_23: 1908206231
       0x72_16x16RobotTileset.v1_43: 989164122
       0x72_16x16RobotTileset.v1_42: 34798697
@@ -7085,7 +7336,6 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_146: -1707953863
       0x72_16x16RobotTileset.v1_119: -42797582
       0x72_16x16RobotTileset.v1_188: 1048937169
-      0x72_16x16RobotTileset.v1_14: 577340228
       player1_walk_1: 1478077196
       0x72_16x16RobotTileset.v1_5: -795672331
       0x72_16x16RobotTileset.v1_38: 360707087
@@ -7108,6 +7358,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_161: -238487505
       0x72_16x16RobotTileset.v1_220: -2126772023
       0x72_16x16RobotTileset.v1_55: 1551316706
+      player2_walk_back_6: -1629876138
       player1_walk_2: -86157844
       0x72_16x16RobotTileset.v1_283: 1875559691
       0x72_16x16RobotTileset.v1_135: 979408950
@@ -7176,15 +7427,16 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_111: 1961366777
       0x72_16x16RobotTileset.v1_203: 251188962
       0x72_16x16RobotTileset.v1_329: -145072950
-      0x72_16x16RobotTileset.v1_12: 148595597
       0x72_16x16RobotTileset.v1_126: -1304351134
       0x72_16x16RobotTileset.v1_91: -104058183
       0x72_16x16RobotTileset.v1_177: 1399368646
       0x72_16x16RobotTileset.v1_238: 1588786968
       0x72_16x16RobotTileset.v1_302: 161656499
+      player2_walk_back_5: 158595021
       0x72_16x16RobotTileset.v1_179: -1897059700
       0x72_16x16RobotTileset.v1_147: 485917499
       0x72_16x16RobotTileset.v1_144: 549417746
+      player2_idle_back_4: 577340228
       0x72_16x16RobotTileset.v1_255: 916745343
       0x72_16x16RobotTileset.v1_229: -2010470319
       player1_walk_5: -1870919226
@@ -7198,6 +7450,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_124: -219913431
       0x72_16x16RobotTileset.v1_76: -817230226
       0x72_16x16RobotTileset.v1_244: 412183374
+      player2_walk_back_4: 1555853313
       0x72_16x16RobotTileset.v1_102: 2073862677
       0x72_16x16RobotTileset.v1_149: -1508727686
       0x72_16x16RobotTileset.v1_132: 1134954481
@@ -7217,6 +7470,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_213: -743674524
       0x72_16x16RobotTileset.v1_172: -1430365497
       0x72_16x16RobotTileset.v1_24: -1632919487
+      player2_walk_back_1: 695855936
       0x72_16x16RobotTileset.v1_106: 563158941
       0x72_16x16RobotTileset.v1_103: 267133083
       player1_idle_2: -198931465
@@ -7234,8 +7488,8 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_26: 942812587
       0x72_16x16RobotTileset.v1_215: 2066682392
       0x72_16x16RobotTileset.v1_352: 1326638665
-      0x72_16x16RobotTileset.v1_13: 573338187
       0x72_16x16RobotTileset.v1_187: 990974194
+      player2_walk_back_3: -744279394
       0x72_16x16RobotTileset.v1_17: -1786755405
       0x72_16x16RobotTileset.v1_236: 1899877960
       0x72_16x16RobotTileset.v1_189: 508152543
@@ -7257,6 +7511,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_232: 1701563408
       0x72_16x16RobotTileset.v1_343: -1561723124
       0x72_16x16RobotTileset.v1_167: -2071898852
+      player2_walk_back_8: -224026
       0x72_16x16RobotTileset.v1_318: -1921297625
       0x72_16x16RobotTileset.v1_41: -461742267
       0x72_16x16RobotTileset.v1_185: -2101855592
@@ -7266,6 +7521,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_303: -2065215201
       0x72_16x16RobotTileset.v1_45: 451425068
       player2_walk_5: -2077456222
+      player2_idle_back_3: 573338187
       0x72_16x16RobotTileset.v1_140: -363408323
       0x72_16x16RobotTileset.v1_3: -1660584655
       0x72_16x16RobotTileset.v1_16: 1154039102
@@ -7283,6 +7539,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_86: -507632504
       0x72_16x16RobotTileset.v1_325: 67284333
       player2_walk_1: -1750168929
+      player2_idle_back_1: 2114334971
       0x72_16x16RobotTileset.v1_349: -567838371
       0x72_16x16RobotTileset.v1_15: 980138455
       player2_walk_8: -1464149856
@@ -7306,6 +7563,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_298: -1002928134
       0x72_16x16RobotTileset.v1_317: -1428192071
       0x72_16x16RobotTileset.v1_128: 1386419285
+      player2_walk_back_7: -966699010
       0x72_16x16RobotTileset.v1_97: 235744817
       0x72_16x16RobotTileset.v1_315: -1945325768
       0x72_16x16RobotTileset.v1_319: -74039310
@@ -7315,6 +7573,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_52: 668027602
       0x72_16x16RobotTileset.v1_110: -1926011266
       0x72_16x16RobotTileset.v1_134: 1436140749
+      player2_idle_back_2: 148595597
       0x72_16x16RobotTileset.v1_155: -1849093383
       0x72_16x16RobotTileset.v1_280: 688451041
       0x72_16x16RobotTileset.v1_174: 2003987464
@@ -7385,6 +7644,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_121: -1829928697
       0x72_16x16RobotTileset.v1_77: -82980255
       0x72_16x16RobotTileset.v1_32: -1580428764
+      player2_walk_back_2: -1959132077
       0x72_16x16RobotTileset.v1_264: 1214604141
   spritePackingTag: 
   pSDRemoveMatte: 0
