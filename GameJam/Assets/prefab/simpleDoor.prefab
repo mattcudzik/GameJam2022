@@ -45,8 +45,20 @@ PrefabInstance:
       value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 4520937243426681445, guid: f6786303558637144bf4c6b774950356, type: 3}
+      propertyPath: PowerUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520937243426681445, guid: f6786303558637144bf4c6b774950356, type: 3}
       propertyPath: timePerUnit
-      value: 5
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520937243426681445, guid: f6786303558637144bf4c6b774950356, type: 3}
+      propertyPath: maxPowerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520937243426681445, guid: f6786303558637144bf4c6b774950356, type: 3}
+      propertyPath: requiredPower
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8764383394306166573, guid: f6786303558637144bf4c6b774950356, type: 3}
       propertyPath: m_RootOrder

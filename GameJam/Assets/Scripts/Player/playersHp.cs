@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class playersHp : MonoBehaviour
 {
-    static public int hp;
+    [SerializeField] public float hp;
     // Start is called before the first frame update
     void Start()
     {
-        hp = 100;
+        hp = 100.0f;
     }
 
     

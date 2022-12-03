@@ -17,7 +17,7 @@ public class Boost : Terminal
         }
         else if (previousEvent == 1)
         {
-            playersHp.hp += 3;
+            GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp += 3;
         }
         else if (previousEvent == 2)
         {
