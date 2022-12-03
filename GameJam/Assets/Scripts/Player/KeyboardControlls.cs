@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeyboardControlls : MonoBehaviour
 {
     [SerializeField] PlayerSettingsSO PSO;
-    [SerializeField] private float movementSpeed;
+    [SerializeField] public float movementSpeed;
     private Vector2 direction = Vector2.zero;
     IVelocity velocity;
     void Awake()
