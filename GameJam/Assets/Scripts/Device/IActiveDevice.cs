@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class IActiveDevice : MonoBehaviour
 {
     public UnityEvent onPowerUpEvent;
+    public UnityEvent onPowerDownEvent;
     public UnityEvent isPoweredEvent;
     public UnityEvent isNotPoweredEvent;
     public UnityEvent OnPlayerEntry;

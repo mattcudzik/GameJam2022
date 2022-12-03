@@ -30,7 +30,7 @@ public class Button : IActiveDevice
             {
                 powerLevel-= PowerUsage;
                 timeRemaining = timePerUnit;
-
+                onPowerDownEvent?.Invoke();
             }
             if (powerLevel < requiredPower)
             {
