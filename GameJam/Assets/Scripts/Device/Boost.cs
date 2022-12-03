@@ -9,12 +9,13 @@ public class Boost : Terminal
     int previousEvent=0;
     int numberOfEvents = 4;
     float remainingTime = 5f;
+    bool isActive = false;
     // Start is called before the first frame update
     protected override void isPowered()
     {
         popUp.enabled = true;
-       
-        remainingTime = 5f;
+        isActive = true;
+         remainingTime = 5f;
         GetComponent<SpriteRenderer>().sprite = poweredSprite;
         if (previousEvent == 0)
         {
@@ -49,15 +50,17 @@ public class Boost : Terminal
 
         void Update()
         {
+        if (isActive)
+        {
             if (remainingTime > 0f)
             {
                 remainingTime -= Time.deltaTime;
             }
             else
             {
-            popUp.enabled = false;
-            //GetComponent<SpriteRenderer>().sprite = depoweredSprite;
-            if (previousEvent == 0)
+                popUp.enabled = false;
+                //GetComponent<SpriteRenderer>().sprite = depoweredSprite;
+                if (previousEvent == 0)
                 {
                     GameObject.FindGameObjectWithTag("GlobalLight").GetComponent<Light2D>().intensity = 0.1f;
                 }
@@ -70,6 +73,8 @@ public class Boost : Terminal
                 previousEvent++;
                 if (previousEvent == numberOfEvents) previousEvent = 0;
             }
-         }      
+        }
+    }
+           
 
 }
