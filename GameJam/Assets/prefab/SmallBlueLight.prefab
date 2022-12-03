@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd11cf3e9f72ee49ac39f0ead0af3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timeout: 2
   lightIntensity: 0.2
 --- !u!58 &5562609916668063721
 CircleCollider2D:
@@ -141,4 +142,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.320673, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 5
