@@ -10,11 +10,11 @@ public class Terminal : IPassiveDevice
     protected override void isPowered()
     {
         GetComponent<SpriteRenderer>().sprite = poweredSprite;
-    
+        Debug.Log("ds");
     }
     protected override void isDepowered()
     {
-
+        Debug.Log("ds");
         GetComponent<SpriteRenderer>().sprite = depoweredSprite;
         
     }
