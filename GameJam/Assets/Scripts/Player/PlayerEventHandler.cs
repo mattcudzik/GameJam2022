@@ -18,7 +18,7 @@ public class PlayerEventHandler : MonoBehaviour
 
 
     private bool isWalking;
-    private int numberOfContacts=0;
+    public int numberOfContacts=0;
     private int counter=0;
     [SerializeField] float power=50f;
     [SerializeField] float eyesLightIntensity=1f;
@@ -73,7 +73,13 @@ public class PlayerEventHandler : MonoBehaviour
             OnWalkFinished?.Invoke();
             isWalking = false;
         }
-        if (Input.GetKeyDown(KeyCode.E) && numberOfContacts>0)
+
+
+
+    }
+    public void Interact()
+    {
+        if (numberOfContacts > 0)
         {
             //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
             var sw = interactableObject.GetComponent<IActiveDevice>();
@@ -85,17 +91,9 @@ public class PlayerEventHandler : MonoBehaviour
                 PowerDown();
 
             }
-            
-
         }
-
-        //DEBUG
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            OnDamage?.Invoke(1);
-        }
+        
     }
-
     private void OnAnimationFinished(string name)
     {
         //if(name == "death")

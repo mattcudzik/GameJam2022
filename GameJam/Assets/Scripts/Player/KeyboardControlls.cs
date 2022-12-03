@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class KeyboardControlls : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField] PlayerSettingsSO PSO;
     private float movementSpeed;
     private Vector2 direction = Vector2.zero;
-
     IVelocity velocity;
     void Awake()
     {
+        
         velocity = gameObject.GetComponent<IVelocity>();
     }
 
@@ -19,16 +19,20 @@ public class KeyboardControlls : MonoBehaviour
     {
         direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(PSO.upKey))
             direction.y = 1f;
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(PSO.downKey))
             direction.y = -1f;
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(PSO.leftKey))
             direction.x = -1f;
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(PSO.rightKey))
             direction.x = 1f;
+        if (Input.GetKeyDown(PSO.interact))
+        {
+            GetComponent<PlayerEventHandler>().Interact(); 
 
+        }
         direction.Normalize();
 
         velocity.SetVelocity(direction * movementSpeed);

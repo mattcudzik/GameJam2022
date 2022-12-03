@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9945e83e0f4f6174db2d058deb8512a9, type: 3}
   m_Name: Player2
   m_EditorClassIdentifier: 
-  upKey: 0
-  downKey: 0
-  leftKey: 0
-  rightKey: 0
-  interact: 0
-  player: 0
+  upKey: 273
+  downKey: 274
+  leftKey: 276
+  rightKey: 275
+  interact: 32
+  player: 1
