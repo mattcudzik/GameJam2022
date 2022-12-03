@@ -45,6 +45,7 @@ public class IActiveDevice : MonoBehaviour
 
     virtual public void ActivateDevice()
     {
+
     }
 
 }

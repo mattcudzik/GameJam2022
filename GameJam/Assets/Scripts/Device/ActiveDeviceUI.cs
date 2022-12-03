@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class ActiveDeviceUI : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private IActiveDevice activeDevice;
+    private bool isUIActive;
     void Start()
     {
-        
+        activeDevice = transform.GetComponent<IActiveDevice>();
+        activeDevice.onPowerUpEvent.AddListener(UpdateUI);
+        isUIActive = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+    private void UpdateUI()
+    {
+        if (isUIActive)
+        {
+
+        }
     }
 }
