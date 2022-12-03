@@ -327,13 +327,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_23
+      name: message background
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
-        width: 16
-        height: 16
+        y: 448
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,48 +343,6 @@ TextureImporter:
       bones: []
       spriteID: 9da596104136b7e4d91497457d5fe284
       internalID: 1908206231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_24
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 480
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba97713bd2958d84e91819115ff2e8a0
-      internalID: -1632919487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_25
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 480
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6560b01671cc48d4aae41e2842ff046f
-      internalID: -288110665
       vertices: []
       indices: 
       edges: []
@@ -553,69 +511,6 @@ TextureImporter:
       bones: []
       spriteID: 9f142b4ce9c406c47814369a6d8d15af
       internalID: -2042431538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_46
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 464
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 870dd4965204c694ea111a1b3c8793e0
-      internalID: -1506448760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_47
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 464
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36ae5aaa0c8ec845ac00bfe6f148695
-      internalID: -1591855719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_48
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 464
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b39ca106f88317f4cbfeb7bcb4053a11
-      internalID: 285638743
       vertices: []
       indices: 
       edges: []
@@ -1036,69 +931,6 @@ TextureImporter:
       bones: []
       spriteID: 087385a08e2caa4429bb2f06f6f2ae6c
       internalID: -1773799811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_69
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b50f56c2ad320ab4fb21c0a00cef6362
-      internalID: -211927066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_70
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 448
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 754d1c00cfb0caf40bf90f11aa68d9cd
-      internalID: -293090699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_71
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 448
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 806d8e4e64967ab47b4d4782e19441c0
-      internalID: -963344397
       vertices: []
       indices: 
       edges: []
@@ -7054,7 +6886,6 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_312: 1268336868
       0x72_16x16RobotTileset.v1_48: 285638743
       player1_walk_4: 1351806543
-      0x72_16x16RobotTileset.v1_23: 1908206231
       0x72_16x16RobotTileset.v1_43: 989164122
       0x72_16x16RobotTileset.v1_42: 34798697
       player2_walk_3: 1319355752
@@ -7109,8 +6940,8 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_130: 700721895
       0x72_16x16RobotTileset.v1_150: 1079058060
       0x72_16x16RobotTileset.v1_259: -415725057
-      0x72_16x16RobotTileset.v1_216: -1599091309
       0x72_16x16RobotTileset.v1_145: 1035281297
+      0x72_16x16RobotTileset.v1_216: -1599091309
       0x72_16x16RobotTileset.v1_251: 2099205588
       0x72_16x16RobotTileset.v1_35: 238502979
       0x72_16x16RobotTileset.v1_73: -746451131
@@ -7357,6 +7188,7 @@ TextureImporter:
       0x72_16x16RobotTileset.v1_285: -38754502
       player2_walk_4: 611762170
       player3_walk_18: 676963234
+      message background: 1908206231
       player1_walk_3: 1145348846
       player3_walk_4: 946154243
       0x72_16x16RobotTileset.v1_347: -1323097619
