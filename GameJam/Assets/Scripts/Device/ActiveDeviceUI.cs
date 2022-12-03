@@ -15,14 +15,15 @@ public class ActiveDeviceUI : MonoBehaviour
     [SerializeField]
     private GameObject chargePointPrefab;
 
-    private GameObject chargeBar;
+    private Transform chargeBar;
     private List<GameObject> chargePointsObjects;
     void Start()
     {
         activeDevice = transform.GetComponent<IActiveDevice>();
         activeDevice.onPowerUpEvent.AddListener(PowerUpUI);
         activeDevice.onPowerDownEvent.AddListener(PowerDownUI);
-        chargeBar = GameObject.FindGameObjectWithTag("ChargeBar");
+        
+        chargeBar = transform.Find("Charge Bar");
         isUIActive = false;
         chargePointsObjects = new List<GameObject>(activeDevice.getMaxPowerLelvel());
 
@@ -38,6 +39,16 @@ public class ActiveDeviceUI : MonoBehaviour
             var spriteRenderer = chargePointsObjects[i].GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = unChargedPointSprite;
         }
+
+        if(charge <= 0)
+        {
+            isUIActive = false;
+            for (int i = 0; i < maxCharge; i++)
+            {
+                Destroy(chargePointsObjects[i]);
+                chargePointsObjects.Clear();
+            }
+        }
     }
 
     private void PowerUpUI()
@@ -48,7 +59,7 @@ public class ActiveDeviceUI : MonoBehaviour
             int maxCharge = activeDevice.getMaxPowerLelvel();
             for(int i = 0; i < maxCharge; i++)
             {
-                GameObject point = Instantiate(chargePointPrefab, chargeBar.transform);
+                GameObject point = Instantiate(chargePointPrefab, chargeBar);
 
                 if (maxCharge%2 != 0)
                 {    
