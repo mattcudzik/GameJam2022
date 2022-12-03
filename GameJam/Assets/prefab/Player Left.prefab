@@ -554,6 +554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PSO: {fileID: 11400000, guid: a4152bcfeb015d64ba53f8568dc7aecd, type: 2}
+  movementSpeed: 10
 --- !u!114 &5915524996931759242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +585,6 @@ MonoBehaviour:
   OnPowerDownEvent:
     m_PersistentCalls:
       m_Calls: []
-  numberOfContacts: 0
   power: 50
   eyesLightIntensity: 1
   backLightIntensity: 0.8

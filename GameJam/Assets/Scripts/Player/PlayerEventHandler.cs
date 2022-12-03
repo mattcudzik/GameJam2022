@@ -18,7 +18,7 @@ public class PlayerEventHandler : MonoBehaviour
 
 
     private bool isWalking;
-    public int numberOfContacts=0;
+    private int numberOfContacts=0;
     private int counter=0;
     [SerializeField] float power=50f;
     [SerializeField] float eyesLightIntensity=1f;
