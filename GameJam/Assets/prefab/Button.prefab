@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4520937243426681445}
   - component: {fileID: 269699076860638726}
   - component: {fileID: 7144516364577099579}
+  - component: {fileID: 5389968712305274478}
   m_Layer: 0
   m_Name: Button
   m_TagString: Interactable
@@ -160,10 +161,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5}
+  m_Offset: {x: 0, y: 0.40648362}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -174,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5046159, y: 0.81296724}
   m_EdgeRadius: 0
 --- !u!114 &7144516364577099579
 MonoBehaviour:
@@ -192,3 +193,19 @@ MonoBehaviour:
   chargedPointSprite: {fileID: 21300000, guid: 2ff918a53b3862447be19ceeaa259aae, type: 3}
   chargePointObject: {fileID: 5314929235555660763, guid: 67a5c6863e370b4489017679c0cb1f7f, type: 3}
   chargeBar: {fileID: 2508053498025878018}
+--- !u!58 &5389968712305274478
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595782654367083408}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.41406596}
+  serializedVersion: 2
+  m_Radius: 0.58593404
