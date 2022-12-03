@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8764383394306166573}
   - component: {fileID: 7771206450347354839}
-  - component: {fileID: 4520937243426681445}
   - component: {fileID: 269699076860638726}
+  - component: {fileID: 1425724315190096519}
+  - component: {fileID: 4091331846285385745}
   m_Layer: 0
   m_Name: case
   m_TagString: Interactable
@@ -86,34 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4520937243426681445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3595782654367083408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68475f4d51be76049b20476d24d8bf98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onPowerUpEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  isPoweredEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  isNotPoweredEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerEntry:
-    m_PersistentCalls:
-      m_Calls: []
-  OnPlayerLeave:
-    m_PersistentCalls:
-      m_Calls: []
-  timePerUnit: 0
 --- !u!61 &269699076860638726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -140,3 +113,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1425724315190096519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595782654367083408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656cf824fe88e274f9ce352db87a1677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPowerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isPoweredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isNotPoweredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerEntry:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerLeave:
+    m_PersistentCalls:
+      m_Calls: []
+  maxPowerLevel: 1
+  requiredPower: 1
+  PowerUsage: 1
+--- !u!114 &4091331846285385745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595782654367083408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd97884f3d03f8345864e2d6b59bc958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeDevices:
+  - {fileID: 1425724315190096519}
+  poweredSprite: {fileID: 21300000, guid: 88680f10dc1ac7442a8c71c1e09f6030, type: 3}
+  depoweredSprite: {fileID: 21300000, guid: 04c0beaaeb744024ea769ad22199e514, type: 3}

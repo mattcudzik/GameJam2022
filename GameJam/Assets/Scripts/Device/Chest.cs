@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Terminal : IPassiveDevice
+public class Chest : IPassiveDevice
 {
     [SerializeField] Sprite poweredSprite;
     [SerializeField] Sprite depoweredSprite;
@@ -10,12 +10,10 @@ public class Terminal : IPassiveDevice
     protected override void isPowered()
     {
         GetComponent<SpriteRenderer>().sprite = poweredSprite;
-
     }
     protected override void isDepowered()
     {
-
         GetComponent<SpriteRenderer>().sprite = depoweredSprite;
-        
+
     }
 }

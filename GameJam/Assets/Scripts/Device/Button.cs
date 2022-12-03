@@ -12,9 +12,7 @@ public class Button : IActiveDevice
     // Start is called before the first frame update
     void Start()
     {
-        requiredPower = 1;
-        powerLevel=0;
-        maxPowerLevel=3;
+        
         timeRemaining = timePerUnit;
     }
 

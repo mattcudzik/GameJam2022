@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
-public class Boost : IPassiveDevice
+public class Boost : Terminal
 {
     int previousEvent=0;
     int numberOfEvents = 4;
