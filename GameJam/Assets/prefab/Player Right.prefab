@@ -48,7 +48,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.3446066, g: 0.754717, b: 0.6262487, a: 1}
+  m_Color: {r: 0.9058824, g: 0.8117648, b: 0.1254902, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.588
-  m_Color: {r: 0.34509805, g: 0.7529412, b: 0.627451, a: 1}
+  m_Color: {r: 0.90588236, g: 0.8117647, b: 0.1254902, a: 1}
   m_Intensity: 0.8
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -489,7 +489,7 @@ SpriteRenderer:
   m_SortingLayerID: 872873437
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1542732067, guid: 543b6088f88c95742b37266434e06241, type: 3}
+  m_Sprite: {fileID: -428246165, guid: 543b6088f88c95742b37266434e06241, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -531,7 +531,7 @@ Animator:
   m_GameObject: {fileID: 7888306335434205712}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ba89f0b6b967014c84ab0e954d98103, type: 2}
+  m_Controller: {fileID: 22100000, guid: 1137e2ca4a77d12449cad14b70ff8887, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -585,7 +585,6 @@ MonoBehaviour:
   OnPowerDownEvent:
     m_PersistentCalls:
       m_Calls: []
-  power: 50
   eyesLightIntensity: 1
   backLightIntensity: 0.8
   Eyeslight: {fileID: 1957246010859068605}

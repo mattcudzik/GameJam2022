@@ -46,8 +46,9 @@ public class ActiveDeviceUI : MonoBehaviour
             for (int i = 0; i < maxCharge; i++)
             {
                 Destroy(chargePointsObjects[i]);
-                chargePointsObjects.Clear();
             }
+
+            chargePointsObjects.Clear();
         }
     }
 
@@ -72,6 +73,8 @@ public class ActiveDeviceUI : MonoBehaviour
 
                 chargePointsObjects.Add(point);
             }
+
+            chargePointsObjects[0].GetComponent<SpriteRenderer>().sprite = chargedPointSprite;
         }
         else
         {
