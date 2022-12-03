@@ -37,7 +37,6 @@ public class IActiveDevice : MonoBehaviour
 
     public void Active()
     {
-        Debug.Log("w³¹czylem urzadzenie i odjo³em pront");
         onPowerUpEvent.Invoke();
         powerLevel++;
         ActivateDevice();

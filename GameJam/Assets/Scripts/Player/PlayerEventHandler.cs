@@ -82,7 +82,7 @@ public class PlayerEventHandler : MonoBehaviour
         if (numberOfContacts > 0)
         {
             //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
-            Debug.Log("OTWIERAM DZRWI");
+
             var sw = interactableObject.GetComponent<IActiveDevice>();
             Debug.Log(sw);
             Debug.Log(sw.getMaxPowerLelvel());
@@ -113,7 +113,9 @@ public class PlayerEventHandler : MonoBehaviour
     private void ScaleLight()
     {
         Eyeslight.intensity = eyesLightIntensity * (power / maxPower);
+        if (Eyeslight.intensity < 0.1f) Eyeslight.intensity = 0.1f;
         backlight.intensity = backLightIntensity * (power / maxPower);
+        if (backlight.intensity < 0.1f) backlight.intensity = 0.1f;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

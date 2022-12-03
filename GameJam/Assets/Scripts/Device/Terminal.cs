@@ -14,12 +14,12 @@ public class Terminal : IPassiveDevice
     // Start is called before the first frame update
     protected override void isPowered()
     {
-        Debug.Log("powered");
         poweredSprite.enabled = true;
         depoweredSprite.enabled = false;
     }
     protected override void isDepowered()
     {
+       
         poweredSprite.enabled = false;
         depoweredSprite.enabled = true;
     }

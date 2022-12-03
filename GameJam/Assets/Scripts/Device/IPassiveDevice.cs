@@ -15,12 +15,11 @@ public class IPassiveDevice : MonoBehaviour
             device.isNotPoweredEvent.AddListener(isDepowered);
         }
     }
+    
     protected virtual void isPowered()
-    {
-        
+    {;
     }
     protected virtual void isDepowered()
     {
-
     }
 }
