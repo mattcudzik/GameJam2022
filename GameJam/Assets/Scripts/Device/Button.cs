@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Button : IActiveDevice
 {
+    [SerializeField] protected Sprite poweredSprite;
+    [SerializeField] protected Sprite depoweredSprite;
     [SerializeField] float timePerUnit;
     float timeRemaining;
     bool isActive = false;
@@ -36,6 +38,7 @@ public class Button : IActiveDevice
             {
                 isNotPoweredEvent?.Invoke();
                 isActive = false;
+                GetComponent<SpriteRenderer>().sprite = depoweredSprite;
             } 
         }
 
@@ -46,6 +49,7 @@ public class Button : IActiveDevice
         {
             isActive = true;
             isPoweredEvent?.Invoke();
+            GetComponent<SpriteRenderer>().sprite = poweredSprite;
         } 
             
     }

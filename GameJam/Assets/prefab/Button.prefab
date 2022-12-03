@@ -150,10 +150,12 @@ MonoBehaviour:
   OnPlayerLeave:
     m_PersistentCalls:
       m_Calls: []
-  maxPowerLevel: 0
-  requiredPower: 0
+  maxPowerLevel: 1
+  requiredPower: 1
   PowerUsage: 1
-  timePerUnit: 0
+  poweredSprite: {fileID: -2042431538, guid: 543b6088f88c95742b37266434e06241, type: 3}
+  depoweredSprite: {fileID: 981421448, guid: 543b6088f88c95742b37266434e06241, type: 3}
+  timePerUnit: 5
 --- !u!61 &269699076860638726
 BoxCollider2D:
   m_ObjectHideFlags: 0
