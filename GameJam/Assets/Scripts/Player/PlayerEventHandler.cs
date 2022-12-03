@@ -105,6 +105,7 @@ public class PlayerEventHandler : MonoBehaviour
     {
         OnPowerDownEvent?.Invoke();
         power--;
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -112,9 +113,10 @@ public class PlayerEventHandler : MonoBehaviour
         //Debug.Log("punkt");
         if (other.tag == "Interactable")
         {
-            Debug.Log("contact");
+            
             numberOfContacts++;
             interactableObject = other.gameObject;
+            interactableObject.GetComponent<IActiveDevice>().OnPlayerEntry?.Invoke();
             
         }
         
@@ -125,7 +127,7 @@ public class PlayerEventHandler : MonoBehaviour
         //Debug.Log("punkt");
         if (other.tag == "Interactable")
         {
-            Debug.Log("RatherNot");
+            interactableObject.GetComponent<IActiveDevice>().OnPlayerLeave?.Invoke();
             numberOfContacts--;
         }
 

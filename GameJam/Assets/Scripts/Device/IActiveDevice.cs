@@ -8,6 +8,8 @@ public class IActiveDevice : MonoBehaviour
     public UnityEvent onPowerUpEvent;
     public UnityEvent isPoweredEvent;
     public UnityEvent isNotPoweredEvent;
+    public UnityEvent OnPlayerEntry;
+    public UnityEvent OnPlayerLeave;
 
     protected int powerLevel;
     protected int maxPowerLevel;
