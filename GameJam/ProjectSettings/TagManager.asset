@@ -7,6 +7,7 @@ TagManager:
   - Interactable
   - GlobalLight
   - HP
+  - ChargeBar
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 872873437
+    locked: 0
+  - name: UI
+    uniqueID: 912344469
     locked: 0

@@ -39,8 +39,8 @@ public class IActiveDevice : MonoBehaviour
 
     public void Active()
     {
-        onPowerUpEvent.Invoke();
         powerLevel++;
+        onPowerUpEvent.Invoke();
         ActivateDevice();
     }
 
