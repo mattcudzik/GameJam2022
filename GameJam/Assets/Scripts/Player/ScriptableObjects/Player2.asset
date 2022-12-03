@@ -16,5 +16,5 @@ MonoBehaviour:
   downKey: 274
   leftKey: 276
   rightKey: 275
-  interact: 32
+  interact: 271
   player: 1
