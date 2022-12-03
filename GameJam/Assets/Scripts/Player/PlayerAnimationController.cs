@@ -61,6 +61,9 @@ public class PlayerAnimationController : MonoBehaviour
         var playerController = transform.GetComponent<KeyboardControlls>();
         playerController.enabled = false;
         spriteRenderer.enabled = false;
+        var obj = GameObject.FindGameObjectsWithTag("PlayerPopUp");
+        obj[0].GetComponent<Canvas>().enabled = false;
+        obj[1].GetComponent<Canvas>().enabled = false;
         //Destroy(gameObject);
     }
 }
