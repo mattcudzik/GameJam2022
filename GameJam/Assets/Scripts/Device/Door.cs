@@ -8,11 +8,12 @@ public class Door : IPassiveDevice
     // Start is called before the first frame update
     protected override void isPowered()
     {
-        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, 20000f, 20f);
-
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
     }
     protected override void isDepowered()
     {
-        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, 20000f, -2f);
+        GetComponent<SpriteRenderer>().enabled = true;
+        GetComponent<Collider2D>().enabled = true;
     }
 }
