@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Terminal : IPassiveDevice
 {
-    [SerializeField] Sprite poweredSprite;
-    [SerializeField] Sprite depoweredSprite;
+    [SerializeField] protected Sprite poweredSprite;
+    [SerializeField] protected Sprite depoweredSprite;
 
     protected override void isPowered()
     {

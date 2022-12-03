@@ -11,6 +11,7 @@ public class Boost : Terminal
     // Start is called before the first frame update
     protected override void isPowered()
     {
+        GetComponent<SpriteRenderer>().sprite = poweredSprite;
         if (previousEvent == 0)
         {
             GameObject.FindGameObjectWithTag("GlobalLight").GetComponent<Light2D>().intensity = 0.3f;
@@ -35,6 +36,8 @@ public class Boost : Terminal
     }
     protected override void isDepowered()
     {
+
+        GetComponent<SpriteRenderer>().sprite = depoweredSprite;
         if (previousEvent == 0)
         {
            GameObject.FindGameObjectWithTag("GlobalLight").GetComponent<Light2D>().intensity=0.1f;
