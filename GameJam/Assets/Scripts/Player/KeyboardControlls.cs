@@ -33,7 +33,6 @@ public class KeyboardControlls : MonoBehaviour
         if (Input.GetKeyDown(PSO.interact))
         {
             GetComponent<PlayerEventHandler>().Interact();
-            Debug.Log("INT");
         }
         direction.Normalize();
 
