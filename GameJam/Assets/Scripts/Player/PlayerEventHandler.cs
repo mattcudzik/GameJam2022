@@ -90,7 +90,6 @@ public class PlayerEventHandler : MonoBehaviour
             {
                 interactableObject.GetComponent<IActiveDevice>().Active();
                 PowerDown();
-
             }
         }
         

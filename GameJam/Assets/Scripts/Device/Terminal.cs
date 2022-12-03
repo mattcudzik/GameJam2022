@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class Terminal : IPassiveDevice
 {
-    [SerializeField] SpriteRenderer poweredSprite;
-    [SerializeField] SpriteRenderer depoweredSprite;
-    private void Start()
-    {
-        poweredSprite.enabled = false;
-        GetComponent<SpriteRenderer>().sprite=depoweredSprite.sprite;
+    [SerializeField] Sprite poweredSprite;
+    [SerializeField] Sprite depoweredSprite;
 
-    }
     protected override void isPowered()
     {
-        GetComponent<SpriteRenderer>().sprite = poweredSprite.sprite;
+        GetComponent<SpriteRenderer>().sprite = poweredSprite;
     
     }
     protected override void isDepowered()
     {
 
-        GetComponent<SpriteRenderer>().sprite = depoweredSprite.sprite;
+        GetComponent<SpriteRenderer>().sprite = depoweredSprite;
         
     }
 }

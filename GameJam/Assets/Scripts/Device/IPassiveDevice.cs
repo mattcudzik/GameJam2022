@@ -17,9 +17,11 @@ public class IPassiveDevice : MonoBehaviour
     }
     
     protected virtual void isPowered()
-    {;
+    {
+
     }
     protected virtual void isDepowered()
     {
+
     }
 }
