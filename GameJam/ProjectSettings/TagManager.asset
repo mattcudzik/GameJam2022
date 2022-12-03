@@ -8,6 +8,7 @@ TagManager:
   - GlobalLight
   - HP
   - ChargeBar
+  - PlayerPopUp
   layers:
   - Default
   - TransparentFX

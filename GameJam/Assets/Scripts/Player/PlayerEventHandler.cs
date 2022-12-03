@@ -27,9 +27,11 @@ public class PlayerEventHandler : MonoBehaviour
     [SerializeField] Light2D backlight;
     private float maxPower=100;
     private GameObject interactableObject;
+    [SerializeField] protected Canvas ourPopUp;
     void Start()
     {
         maxPower = GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp;
+        ourPopUp.enabled = false;
         Eyeslight.intensity = eyesLightIntensity;
         backlight.intensity = backLightIntensity;
         velocityComp = GetComponent<IVelocity>();
@@ -134,7 +136,7 @@ public class PlayerEventHandler : MonoBehaviour
             numberOfContacts++;
             interactableObject = other.gameObject;
             interactableObject.GetComponent<IActiveDevice>().OnPlayerEntry?.Invoke();
-            
+            ourPopUp.enabled = true;
         }
         
     }
@@ -144,8 +146,10 @@ public class PlayerEventHandler : MonoBehaviour
         //Debug.Log("punkt");
         if (other.tag == "Interactable")
         {
+            
             interactableObject.GetComponent<IActiveDevice>().OnPlayerLeave?.Invoke();
             numberOfContacts--;
+            if (numberOfContacts == 0) ourPopUp.enabled = false;
         }
 
     }
