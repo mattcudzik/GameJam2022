@@ -10,6 +10,7 @@ public class IActiveDevice : MonoBehaviour
     [SerializeField] int powerLevel;
     [SerializeField] int maxPowerLevel;
     [SerializeField] Bulb myBulb;
+    private float time = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,15 @@ public class IActiveDevice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (time > 0.0f)
+        {
+            time -= 0.01f;
+        }
+        else if (time == 0.0f && powerLevel > 0)
+        {
+            powerLevel = 0;
+            myBulb.changeState();
+        }
     }
 
     public int getCost()
@@ -34,6 +43,7 @@ public class IActiveDevice : MonoBehaviour
     {
         Debug.Log("w³¹czylem urzadzenie i odjo³em pront");
         myBulb.changeState();
+        time += 2.0f;
         powerLevel++;
     }
     public void onPowerUp()
