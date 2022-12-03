@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject explosionFrefab;
+
     private PlayerEventHandler playerEventHandler;
 
     private SpriteRenderer spriteRenderer;
@@ -17,6 +20,7 @@ public class PlayerAnimationController : MonoBehaviour
         playerEventHandler.OnTurn.AddListener(onTurn);
         playerEventHandler.OnWalkStart.AddListener(onWalkStart);
         playerEventHandler.OnWalkFinished.AddListener(onWalkFinished);
+        playerEventHandler.OnDeath.AddListener(onDeath);
 
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
@@ -48,5 +52,15 @@ public class PlayerAnimationController : MonoBehaviour
     private void onWalkFinished()
     {
         animator.SetBool("walking", false);
+    }
+
+    private void onDeath()
+    {
+        Instantiate(explosionFrefab,transform.position,Quaternion.identity);
+        transform.Translate(Vector3.back * 20);
+        var playerController = transform.GetComponent<KeyboardControlls>();
+        playerController.enabled = false;
+        spriteRenderer.enabled = false;
+        //Destroy(gameObject);
     }
 }

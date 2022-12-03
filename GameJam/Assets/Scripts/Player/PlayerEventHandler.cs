@@ -84,8 +84,8 @@ public class PlayerEventHandler : MonoBehaviour
             //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
 
             var sw = interactableObject.GetComponent<IActiveDevice>();
-            Debug.Log(sw);
-            Debug.Log(sw.getMaxPowerLelvel());
+            
+            
             if (sw.getPowerLelvel() < sw.getMaxPowerLelvel())
             {
                 interactableObject.GetComponent<IActiveDevice>().Active();
@@ -94,20 +94,27 @@ public class PlayerEventHandler : MonoBehaviour
         }
         
     }
-    private void OnAnimationFinished(string name)
-    {
-        //if(name == "death")
-        //{
-        //    Destroy(gameObject);
-        //}
-    }
 
     private void PowerDown()
     {
-        GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp--;
-        OnPowerDownEvent?.Invoke();
-        GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<PlayerEventHandler>().ScaleLight();
-        GameObject.FindGameObjectsWithTag("Player")[1].GetComponent<PlayerEventHandler>().ScaleLight();
+        var hpComp = GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>();
+        hpComp.hp--;
+
+        var players = GameObject.FindGameObjectsWithTag("Player");
+
+        if (hpComp.hp <= 0)
+        {
+            players[0].GetComponent<PlayerEventHandler>().OnDeath?.Invoke();
+            players[1].GetComponent<PlayerEventHandler>().OnDeath?.Invoke();
+        }
+        else
+        {
+            players[0].GetComponent<PlayerEventHandler>().OnPowerDownEvent?.Invoke();
+            players[1].GetComponent<PlayerEventHandler>().OnPowerDownEvent?.Invoke();
+        }
+        
+        players[0].GetComponent<PlayerEventHandler>().ScaleLight();
+        players[1].GetComponent<PlayerEventHandler>().ScaleLight();
 
     }
     private void ScaleLight()
