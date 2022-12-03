@@ -9,18 +9,18 @@ public class Terminal : IPassiveDevice
     private void Start()
     {
         poweredSprite.enabled = false;
+        GetComponent<SpriteRenderer>().sprite=depoweredSprite.sprite;
 
     }
-    // Start is called before the first frame update
     protected override void isPowered()
     {
-        poweredSprite.enabled = true;
-        depoweredSprite.enabled = false;
+        GetComponent<SpriteRenderer>().sprite = poweredSprite.sprite;
+    
     }
     protected override void isDepowered()
     {
-       
-        poweredSprite.enabled = false;
-        depoweredSprite.enabled = true;
+
+        GetComponent<SpriteRenderer>().sprite = depoweredSprite.sprite;
+        
     }
 }

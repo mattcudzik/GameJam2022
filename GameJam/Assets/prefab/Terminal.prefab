@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 6392305175687041733}
   - component: {fileID: 5272749631789083850}
   - component: {fileID: 480401905961020203}
+  - component: {fileID: 4703529232260547331}
   m_Layer: 0
   m_Name: Terminal
   m_TagString: Interactable
@@ -242,6 +243,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeDevices:
-  - {fileID: 0}
+  - {fileID: 4703529232260547331}
   poweredSprite: {fileID: 980441345353272502}
   depoweredSprite: {fileID: 4225302254116738424}
+--- !u!114 &4703529232260547331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416781826356704384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68475f4d51be76049b20476d24d8bf98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPowerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isPoweredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isNotPoweredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerEntry:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerLeave:
+    m_PersistentCalls:
+      m_Calls: []
+  timePerUnit: 0
