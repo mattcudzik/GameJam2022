@@ -40,17 +40,13 @@ public class ActiveDeviceUI : MonoBehaviour
                 if(maxCharge%2 != 0)
                 {
                     GameObject point = Instantiate(chargePointObject, chargeBar.transform);
-                    //0.375
-                    point.transform.Translate(new Vector3(i * 0.375f - 0.375f*(maxCharge/2), 0, 0));
-                    
+                    point.transform.Translate(new Vector3(i * 0.375f - 0.375f*(maxCharge/2), 0, 0)); 
                 }
                 else
                 {
                     GameObject point = Instantiate(chargePointObject, chargeBar.transform);
-                    
                     point.transform.Translate(new Vector3(i * 0.375f - 0.1875f - 0.375f * ((maxCharge / 2)-1), 0, 0));
                 }
-                
             }
             
 

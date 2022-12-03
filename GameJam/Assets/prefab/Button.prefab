@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2508053498025878018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2651493393850084268}
+  m_Layer: 0
+  m_Name: Charge Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2651493393850084268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2508053498025878018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8764383394306166573}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3595782654367083408
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 7771206450347354839}
   - component: {fileID: 4520937243426681445}
   - component: {fileID: 269699076860638726}
+  - component: {fileID: 7144516364577099579}
   m_Layer: 0
   m_Name: Button
   m_TagString: Interactable
@@ -30,7 +62,8 @@ Transform:
   m_LocalPosition: {x: 0.5, y: -1.5, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2651493393850084268}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,6 +146,9 @@ MonoBehaviour:
   OnPlayerLeave:
     m_PersistentCalls:
       m_Calls: []
+  maxPowerLevel: 0
+  requiredPower: 0
+  PowerUsage: 1
   timePerUnit: 0
 --- !u!61 &269699076860638726
 BoxCollider2D:
@@ -140,3 +176,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7144516364577099579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595782654367083408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b23dc22c04bc5d4588278b8b3f9425d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unChargedPointSprite: {fileID: 21300000, guid: 9b37ea69b28ce31409dce719e6d509c0, type: 3}
+  chargedPointSprite: {fileID: 21300000, guid: 2ff918a53b3862447be19ceeaa259aae, type: 3}
+  chargePointObject: {fileID: 5314929235555660763, guid: 67a5c6863e370b4489017679c0cb1f7f, type: 3}
+  chargeBar: {fileID: 2508053498025878018}
