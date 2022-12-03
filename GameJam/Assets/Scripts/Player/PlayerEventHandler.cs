@@ -114,8 +114,6 @@ public class PlayerEventHandler : MonoBehaviour
     private void ScaleLight()
     {
         Eyeslight.intensity = eyesLightIntensity * (power / maxPower);
-        Debug.Log(Eyeslight.intensity);
-        Debug.Log(eyesLightIntensity * (power / maxPower));
         backlight.intensity = backLightIntensity * (power / maxPower);
     }
     private void OnTriggerEnter2D(Collider2D other)
