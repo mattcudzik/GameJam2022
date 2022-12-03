@@ -104,7 +104,10 @@ MonoBehaviour:
   OnPlayerLeave:
     m_PersistentCalls:
       m_Calls: []
-  timePerUnit: 0
+  maxPowerLevel: 3
+  requiredPower: 3
+  PowerUsage: 3
+  timePerUnit: 45
 --- !u!212 &198584757414463404
 SpriteRenderer:
   m_ObjectHideFlags: 0

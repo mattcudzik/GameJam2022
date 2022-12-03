@@ -30,7 +30,7 @@ public class Button : IActiveDevice
             }
             else
             {
-                powerLevel--;
+                powerLevel-= PowerUsage;
                 timeRemaining = timePerUnit;
 
             }

@@ -12,8 +12,9 @@ public class IActiveDevice : MonoBehaviour
     public UnityEvent OnPlayerLeave;
 
     protected int powerLevel;
-    protected int maxPowerLevel;
-    protected int requiredPower;
+    [SerializeField] protected int maxPowerLevel;
+    [SerializeField] protected int requiredPower;
+    [SerializeField] protected int PowerUsage=1;
     // Start is called before the first frame update
     void Start()
     {
