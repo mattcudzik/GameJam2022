@@ -26,14 +26,12 @@ public class PlayerEventHandler : MonoBehaviour
     [SerializeField] Light2D Eyeslight;
     [SerializeField] Light2D backlight;
     private float maxPower=100;
-    float hp;
     private GameObject interactableObject;
     void Start()
     {
-        hp = GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp;
+        maxPower = GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp;
         Eyeslight.intensity = eyesLightIntensity;
         backlight.intensity = backLightIntensity;
-        maxPower = hp;
         velocityComp = GetComponent<IVelocity>();
         prevVelocity = Vector2.right;
         if(velocityComp.GetVelocity() == Vector2.zero)
@@ -106,16 +104,16 @@ public class PlayerEventHandler : MonoBehaviour
 
     private void PowerDown()
     {
-        hp--;
+        GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp--;
         OnPowerDownEvent?.Invoke();
         ScaleLight();
 
     }
     private void ScaleLight()
     {
-        Eyeslight.intensity = eyesLightIntensity * (hp / maxPower);
+        Eyeslight.intensity = eyesLightIntensity * (GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp / maxPower);
         if (Eyeslight.intensity < 0.1f) Eyeslight.intensity = 0.1f;
-        backlight.intensity = backLightIntensity * (hp / maxPower);
+        backlight.intensity = backLightIntensity * (GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp / maxPower);
         if (backlight.intensity < 0.1f) backlight.intensity = 0.1f;
     }
     private void OnTriggerEnter2D(Collider2D other)
