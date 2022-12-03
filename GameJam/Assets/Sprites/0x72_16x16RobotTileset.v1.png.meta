@@ -105,27 +105,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_0
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 443
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7692076bb6cf6b54384bedffe22ba8c0
-      internalID: -1145188007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 0x72_16x16RobotTileset.v1_1
       rect:
         serializedVersion: 2
@@ -322,8 +301,8 @@ TextureImporter:
         y: 496
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

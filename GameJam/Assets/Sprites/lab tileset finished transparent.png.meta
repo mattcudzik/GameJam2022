@@ -105,27 +105,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lab tileset finished transparent_0
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 200
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2846d192e33135e47b3da749d38a16a0
-      internalID: 1909519162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: lab tileset finished transparent_1
       rect:
         serializedVersion: 2
@@ -3507,7 +3486,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lab tileset finished transparent_83: -617966457
+      lab tileset finished transparent_77: -941174170
       lab tileset finished transparent_32: -952000844
       lab tileset finished transparent_178: -793967387
       lab tileset finished transparent_134: -1108980025
@@ -3566,15 +3545,15 @@ TextureImporter:
       lab tileset finished transparent_186: -1597693310
       lab tileset finished transparent_191: -967499322
       lab tileset finished transparent_8: -1018559883
-      lab tileset finished transparent_46: 1670463498
-      lab tileset finished transparent_16: 1839397936
-      lab tileset finished transparent_145: -611094317
       lab tileset finished transparent_68: 314108546
+      lab tileset finished transparent_46: 1670463498
+      lab tileset finished transparent_180: 1797744060
       lab tileset finished transparent_12: 1867438944
-      lab tileset finished transparent_13: -308453064
+      lab tileset finished transparent_16: 1839397936
       lab tileset finished transparent_111: 1783513750
       lab tileset finished transparent_87: 1602356159
-      lab tileset finished transparent_180: 1797744060
+      lab tileset finished transparent_13: -308453064
+      lab tileset finished transparent_145: -611094317
       lab tileset finished transparent_175: -1320618962
       lab tileset finished transparent_152: 1133638304
       lab tileset finished transparent_95: -695611137
@@ -3703,13 +3682,13 @@ TextureImporter:
       lab tileset finished transparent_84: -1654523689
       lab tileset finished transparent_129: -881273785
       lab tileset finished transparent_38: 208580664
+      lab tileset finished transparent_118: -433501221
       lab tileset finished transparent_4: 2020360843
       lab tileset finished transparent_66: 1596735024
-      lab tileset finished transparent_77: -941174170
       lab tileset finished transparent_62: -2092548421
+      lab tileset finished transparent_83: -617966457
       lab tileset finished transparent_47: 641971612
       lab tileset finished transparent_176: -809623044
-      lab tileset finished transparent_118: -433501221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
