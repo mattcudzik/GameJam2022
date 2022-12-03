@@ -106,8 +106,8 @@ public class PlayerEventHandler : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag("HP").GetComponent<playersHp>().hp--;
         OnPowerDownEvent?.Invoke();
-        GameObject.FindGameObjectsWithTag("player")[0].GetComponent<PlayerEventHandler>().ScaleLight();
-        GameObject.FindGameObjectsWithTag("player")[1].GetComponent<PlayerEventHandler>().ScaleLight();
+        GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<PlayerEventHandler>().ScaleLight();
+        GameObject.FindGameObjectsWithTag("Player")[1].GetComponent<PlayerEventHandler>().ScaleLight();
 
     }
     private void ScaleLight()
