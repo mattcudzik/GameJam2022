@@ -16,7 +16,6 @@ public class PlayerEventHandler : MonoBehaviour
     private IVelocity velocityComp;
     private Vector2 prevVelocity;
 
-    private AnimationTriggerer animationTriggerer;
 
     private bool isWalking;
     private int numberOfContacts=0;
@@ -37,8 +36,7 @@ public class PlayerEventHandler : MonoBehaviour
         {
             isWalking = true;
         }
-        //animationTriggerer = GetComponentInChildren<AnimationTriggerer>();
-        //animationTriggerer.OnAnimationComplete.AddListener(OnAnimationFinished);
+       
     }
 
     void Update()
