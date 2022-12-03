@@ -8,10 +8,11 @@ public class Door : IPassiveDevice
     // Start is called before the first frame update
     protected override void isPowered()
     {
-        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, 20f);
+        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, 20000f, 20f);
+
     }
     protected override void isDepowered()
     {
-        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, -2f);
+        GetComponent<Transform>().position.Set(GetComponent<Transform>().position.x, 20000f, -2f);
     }
 }

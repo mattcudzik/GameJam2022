@@ -32,8 +32,8 @@ public class KeyboardControlls : MonoBehaviour
             direction.x = 1f;
         if (Input.GetKeyDown(PSO.interact))
         {
-            GetComponent<PlayerEventHandler>().Interact(); 
-
+            GetComponent<PlayerEventHandler>().Interact();
+            Debug.Log("INT");
         }
         direction.Normalize();
 

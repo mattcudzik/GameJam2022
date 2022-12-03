@@ -82,6 +82,7 @@ public class PlayerEventHandler : MonoBehaviour
         if (numberOfContacts > 0)
         {
             //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
+            Debug.Log("OTWIERAM DZRWI");
             var sw = interactableObject.GetComponent<IActiveDevice>();
             Debug.Log(sw);
             Debug.Log(sw.getMaxPowerLelvel());

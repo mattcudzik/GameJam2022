@@ -44,10 +44,11 @@ public class Button : IActiveDevice
     }
     override public void ActivateDevice()
     {
-        
+        Debug.Log("aktywacja door");
         if (powerLevel >= requiredPower && isActive == false)
         {
             isActive = true;
+            Debug.Log("otwarte");
             isPoweredEvent?.Invoke();
         } 
             
