@@ -4027,11 +4027,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 336
+        y: 320
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4048,11 +4048,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 336
+        y: 320
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4522,48 +4522,6 @@ TextureImporter:
       bones: []
       spriteID: 02b3c61d44a9f5a48924465369057abb
       internalID: 1032195850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_243
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 320
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 758746b72bebb6d48bbcf68eb84fed9d
-      internalID: 1903486610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16RobotTileset.v1_244
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 320
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8629d87ea3500e448d108418767c2fc
-      internalID: 412183374
       vertices: []
       indices: 
       edges: []
