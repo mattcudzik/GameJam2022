@@ -6,53 +6,43 @@ using UnityEngine.Events;
 public class IActiveDevice : MonoBehaviour
 {
     public UnityEvent onPowerUpEvent;
-    
-    [SerializeField] int powerLevel;
-    [SerializeField] int maxPowerLevel;
-    [SerializeField] Bulb myBulb;
-    private float time = 0.0f;
+    public UnityEvent isPoweredEvent;
+    public UnityEvent isNotPoweredEvent;
+
+    protected int powerLevel;
+    protected int maxPowerLevel;
+    protected int requiredPower;
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if (time > 0.0f)
-        {
-            time -= 0.01f;
-        }
-        else if (time == 0.0f && powerLevel > 0)
-        {
-            powerLevel = 0;
-            myBulb.changeState();
-        }
+
     }
 
-    public int getCost()
+    public int getPowerLelvel()
     {
-        if (powerLevel < maxPowerLevel)
-            return 1;
-        else
-            return 0;
+        return powerLevel;
+    }
+    public int getMaxPowerLelvel()
+    {
+        return maxPowerLevel;
     }
 
     public void Active()
     {
         Debug.Log("w³¹czylem urzadzenie i odjo³em pront");
-        myBulb.changeState();
-        time += 2.0f;
+        onPowerUpEvent.Invoke();
         powerLevel++;
+        ActivateDevice();
     }
-    public void onPowerUp()
+
+    virtual public void ActivateDevice()
     {
-        if (powerLevel < maxPowerLevel)
-        {
-             powerLevel++;
-             Debug.Log(powerLevel);
-             onPowerUpEvent.Invoke();    
-        }
     }
+
 }

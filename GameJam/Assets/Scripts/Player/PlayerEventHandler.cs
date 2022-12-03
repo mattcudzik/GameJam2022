@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerEventHandler : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerEventHandler : MonoBehaviour
     public UnityEvent OnTurn;
     public UnityEvent<int> OnDamage;
     public UnityEvent OnDeath;
+    public UnityEvent OnPowerDownEvent;
 
     private IVelocity velocityComp;
     private Vector2 prevVelocity;
@@ -17,10 +19,9 @@ public class PlayerEventHandler : MonoBehaviour
     private AnimationTriggerer animationTriggerer;
 
     private bool isWalking;
-    private bool isDead;
-    private bool isInContact;
+    private int numberOfContacts=0;
     private int counter=0;
-    private int energy=50;
+    [SerializeField] int power=50;
     //private bool isGenerator;
     private GameObject interactableObject;
     void Start()
@@ -68,12 +69,19 @@ public class PlayerEventHandler : MonoBehaviour
             OnWalkFinished?.Invoke();
             isWalking = false;
         }
-        if (Input.GetKeyDown(KeyCode.E) && isInContact==true)
+        if (Input.GetKeyDown(KeyCode.E) && numberOfContacts>0)
         {
             //interactableObject.GetComponent<IActiveDevice>().onPowerUpEvent.
             var sw = interactableObject.GetComponent<IActiveDevice>();
-            if(sw.getCost()>0 && sw.getCost() < energy)
-            interactableObject.GetComponent<IActiveDevice>().Active();
+            Debug.Log(sw);
+            Debug.Log(sw.getMaxPowerLelvel());
+            if (sw.getPowerLelvel() < sw.getMaxPowerLelvel())
+            {
+                Debug.Log("powerlcvl");
+                interactableObject.GetComponent<IActiveDevice>().Active();
+                PowerDown();
+
+            }
             
 
         }
@@ -93,6 +101,11 @@ public class PlayerEventHandler : MonoBehaviour
         //}
     }
 
+    private void PowerDown()
+    {
+        OnPowerDownEvent?.Invoke();
+        power--;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //Check to see if the tag on the collider is equal to Enemy
@@ -100,7 +113,7 @@ public class PlayerEventHandler : MonoBehaviour
         if (other.tag == "Interactable")
         {
             Debug.Log("contact");
-            isInContact = true;
+            numberOfContacts++;
             interactableObject = other.gameObject;
             
         }
@@ -113,7 +126,7 @@ public class PlayerEventHandler : MonoBehaviour
         if (other.tag == "Interactable")
         {
             Debug.Log("RatherNot");
-            isInContact = false;
+            numberOfContacts--;
         }
 
     }
