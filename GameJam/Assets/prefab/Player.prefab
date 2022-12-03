@@ -585,8 +585,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   power: 50
+  eyesLightIntensity: 1
+  backLightIntensity: 0.8
   Eyeslight: {fileID: 1957246010859068605}
-  behindlight: {fileID: 7303770522621002752}
+  backlight: {fileID: 7303770522621002752}
 --- !u!114 &5776078514911772323
 MonoBehaviour:
   m_ObjectHideFlags: 0
