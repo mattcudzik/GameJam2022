@@ -81,7 +81,7 @@ MonoBehaviour:
   depoweredSprite: {fileID: 1882869285, guid: 543b6088f88c95742b37266434e06241, type: 3}
   popUp: {fileID: 6012476968301299197}
   popTMP: {fileID: 6012476966686135412}
-  popUPText: "CHUJ CI W DUP\u0118"
+  popUPText: Tip for you
 --- !u!114 &4703529232260547331
 MonoBehaviour:
   m_ObjectHideFlags: 0
