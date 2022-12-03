@@ -21,11 +21,13 @@ public class PlayerEventHandler : MonoBehaviour
     private int numberOfContacts=0;
     private int counter=0;
     [SerializeField] int power=50;
-    //private bool isGenerator;
+    [SerializeField] Light2D Eyeslight;
+    [SerializeField] Light2D behindlight;
+    private int maxPower;
     private GameObject interactableObject;
     void Start()
     {
-        
+        maxPower = power;
         velocityComp = GetComponent<IVelocity>();
         prevVelocity = Vector2.right;
         if(velocityComp.GetVelocity() == Vector2.zero)
@@ -75,7 +77,6 @@ public class PlayerEventHandler : MonoBehaviour
             Debug.Log(sw.getMaxPowerLelvel());
             if (sw.getPowerLelvel() < sw.getMaxPowerLelvel())
             {
-                Debug.Log("powerlcvl");
                 interactableObject.GetComponent<IActiveDevice>().Active();
                 PowerDown();
 
@@ -103,7 +104,12 @@ public class PlayerEventHandler : MonoBehaviour
     {
         OnPowerDownEvent?.Invoke();
         power--;
+        ScaleLight();
 
+    }
+    private void ScaleLight()
+    {
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
