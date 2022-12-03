@@ -18,6 +18,7 @@ public class ActiveDeviceUI : MonoBehaviour
     {
         
     }
+
     private void UpdateUI()
     {
         if (isUIActive)
